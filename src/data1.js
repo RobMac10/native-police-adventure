@@ -1,0 +1,307 @@
+// Story data, part 1: sources, opening, and the story nodes.
+// {{T:...}} text is teacher-only. Any "teacher" key is removed from the student build.
+window.NPA = window.NPA || {};
+Object.assign(window.NPA, {
+title: 'Billy and the Native Police',
+subtitle: 'A choose-your-path story set in Central Queensland in the late 1870s',
+sources: {
+  burke: { t: 'Burke, H., Barker, B., Cole, N., Wallis, L.A., Hatte, E., Davidson, I. and Lowe, K. (2018). The Queensland Native Police and Strategies of Recruitment on the Queensland Frontier, 1849–1901. Journal of Australian Studies.', u: 'https://doi.org/10.1080/14443058.2018.1474942', short: 'Burke and others 2018' },
+  nulungu: { t: 'Nulungu Research Institute, University of Notre Dame Australia. Rewriting the history of the Native Mounted Police in Queensland (Nulungu Insights).', u: 'https://researchonline.nd.edu.au/cgi/viewcontent.cgi?article=1000&context=nulungu_insights', short: 'Nulungu Insights' },
+  fcdb: { t: 'Frontier Conflict and the Native Mounted Police in Queensland. Research database of camps, officers, troopers, conflict events and primary sources, 1848–1904.', u: 'https://doi.org/10.25957/5d9fb541294d5', short: 'Frontier Conflict database' },
+  qsa: { t: 'Queensland State Archives. Agency A2377, Native Police.', u: 'https://www.archivessearch.qld.gov.au/agencies/A2377', short: 'Queensland State Archives, agency A2377' },
+  georgey: { t: 'Queensland State Archives, QSA846769. The Petition of Georgey, 6 May 1863 (transcribed by the Frontier Conflict project). Printed in the Courier (Brisbane), 7 May 1863, page 3, available through Trove.', u: 'https://fromthepage.com/qldfrontierconflict/correspondence-1879/qsa846769-1863-the-petition-of-georgy-6-may-colonial-secretarys-office-in-letters-63-934', short: 'Petition of Georgey, 1863' },
+  sc1861: { t: 'Queensland Legislative Assembly (1861). Report from the Select Committee on the Native Police Force and the Condition of the Aborigines Generally. Brisbane: Fairfax and Belbridge. Held by the National Library of Australia.', u: 'https://nla.gov.au/nla.obj-52862431/view', short: 'Select Committee report, 1861' },
+  massacres: { t: 'University of Newcastle. Colonial Frontier Massacres in Central and Eastern Australia 1788–1930 (map and Introduction).', u: 'https://c21ch.newcastle.edu.au/colonialmassacres/introduction.php', short: 'Colonial Frontier Massacres map, Newcastle' },
+  ryan: { t: 'Ryan, L. (2019–20). Colonial frontier massacres. Notes for a Parliamentary Library seminar, Parliament of Australia.', u: 'https://www.aph.gov.au/-/media/05_About_Parliament/54_Parliamentary_Depts/544_Parliamentary_Library/Seminars/2019-20/LyndallRyanNotes.pdf', short: 'Ryan, Parliamentary Library notes' },
+  woor: { t: 'Queensland Government. Community histories: Woorabinda.', u: 'https://www.qld.gov.au/firstnations/cultural-awareness-heritage-arts/community-histories/community-histories-u-y/community-histories-woorabinda', short: 'Queensland Government, Woorabinda history' },
+  darumbal: { t: 'Darumbal Enterprises. Darumbal History.', u: 'https://darumbal.com.au/darumbal-culture/darumbal-history/', short: 'Darumbal Enterprises' },
+  aww: { t: 'Australian Wars and Resistance. Rockhampton region entry.', u: 'https://www.australianwars.net/details.php?id=2503', short: 'Australian Wars and Resistance' },
+  blog: { t: 'Wallis, L., Burke, H., Barker, B. and Cole, N. (2018). Willing Volunteers? Recruiting Aboriginal Boys and Men to the NMP, Part II. Archaeology on the Frontier. This page quotes the Rockhampton Bulletin, 1 February 1873, page 2 (Trove).', u: 'https://archaeologyonthefrontier.com/2018/05/13/willing-volunteers/', short: 'Archaeology on the Frontier blog' },
+  photo: { t: 'Photograph of Lieutenant George Murray and his detachment of Native Mounted Police, Rockhampton, 1864. Queensland Police Museum, via Wikimedia Commons (public domain in Australia).', u: 'https://commons.wikimedia.org/wiki/File:Queensland_Native_Police_1864.jpg', short: 'Photograph, Rockhampton 1864' }
+},
+
+how: {
+  taken: 'You were taken from a station when you were about fourteen.',
+  sentence: 'You were in jail, and you were told the force was the other choice.',
+  joined: 'You said yes, because you saw no other way to stay alive.'
+},
+
+nodes: {
+
+how: { id: 'how', title: 'Before you ride', text: [
+  'This story is set in Central Queensland in the late 1870s. You are about seventeen years old. The white officers call you Billy. That is a name the force gave you. You have another name from your own country, and you do not say it here.',
+  'Your own country is a long way to the south. You are a trooper in the Native Mounted Police. This is a police force of Aboriginal men who are led by white officers.',
+  'How did you come to be a trooper?'
+ ],
+ real: [
+  { t: 'The records name several ways that men came into the force. These include force, kidnapping, offers such as a shorter prison sentence, and joining that may have looked like a free choice. In 1878 the Executive Council approved cutting prison sentences for Aboriginal men who joined.', src: ['burke'] },
+  { t: 'A parliamentary committee in 1861 heard that boys were being taken by force from inland stations.', src: ['burke', 'sc1861'] },
+  { t: 'No account is known from any trooper of how he was recruited. The people who wrote the records were the officers and settlers.', src: ['burke'] },
+  { t: 'In the early years troopers were often brought from far away, so that they had no family ties to the people they were sent against. By the 1870s troopers were more often posted nearer their home region. A trooper could still be a stranger in another nation’s country, even a short distance from home.', src: ['burke'] },
+  { t: 'A Rockhampton newspaper reported in February 1873 that eleven men were enlisted in one week, chosen from a large number who had “presented themselves”. The researchers who quote this say it is unlikely that many recruits were truly willing.', src: ['blog'] }
+ ],
+ choices: [
+  { label: 'You were taken from a station when you were about fourteen.', to: 'camp', set: { how: 'taken' } },
+  { label: 'You were in jail, and you were told the force was the other choice.', to: 'camp', set: { how: 'sentence' } },
+  { label: 'You said yes, because you saw no other way to stay alive.', to: 'camp', set: { how: 'joined' } }
+ ],
+ teacher: { about: 'This choice does not change the plot. It changes how Billy remembers his past. It shows students that “joined the force” covers very different situations.',
+  ask: [ 'Which of the three ways would the records call “volunteering”?', 'Why can a historian not know whether a recruit was willing?' ],
+  answers: [ 'All three could be recorded as enlisting. A written record of a man “offering himself” does not show what choices he had.', 'The surviving records were written by officers, settlers and newspapers. No trooper’s own account of being recruited is known. Students can compare this with the petition of Georgey (1863), one of the few records in a trooper’s own words.' ] }
+},
+
+camp: { id: 'camp', title: 'Morning at the camp', text: [
+  { if: { how: 'taken' }, t: 'You remember the day the troopers rode up to the station. Nobody asked you whether you wanted to come.' },
+  { if: { how: 'sentence' }, t: 'You remember the magistrate’s room. The choice was jail or the force, and you chose the force.' },
+  { if: { how: 'joined' }, t: 'You remember going to the officer yourself. You wanted a horse, food and a place to sleep. Nobody can say that you were forced, and nobody can say that you were free.' },
+  'The camp is beside a creek. There are slab huts for the officer and the sergeant, a yard for the horses and a long shed where the troopers sleep. Eight troopers live here. Sub-Inspector Hale is in charge. Camp Sergeant Doyle looks after the stores and gives the orders when Hale is away.',
+  'This morning the camp is busy before sunrise. A rider came in overnight from Ridge Creek station with a letter. Hale has been in his hut with it for an hour.'
+ ],
+ real: [
+  { t: 'A Native Police camp usually had four to twelve troopers under one European officer. One or two white men might also live at the camp as camp keepers.', src: ['nulungu'] },
+  { t: 'When Queensland separated from New South Wales in 1859, the force had a commandant, lieutenants, camp sergeants and about 100 Aboriginal troopers. Its headquarters were at Rockhampton. A barracks was built at Rockhampton in 1860 and another on the Nogoa River in 1861.', src: ['qsa', 'woor'] },
+  { t: 'Troopers were given English names while in the force, and many of these names were insulting. Only some troopers kept their own names in the records.', src: ['burke'] }
+ ],
+ choices: [
+  { label: 'Go to the horse yard and check your gear.', to: 'horses' },
+  { label: 'Find Corporal Tom at the creek.', to: 'corporal' }
+ ],
+ teacher: { about: 'Sets the scene and introduces the structure of the force: white officers and sergeants, Aboriginal troopers.',
+  ask: [ 'Why do you think troopers were given English names in the records?' ],
+  answers: [ 'It made them easier for officers to record and control. It also cut them off from their own names and families. The names were often insulting. Students should say what this tells us about how the officers saw the troopers.' ] }
+},
+
+horses: { id: 'horses', title: 'The horse yard', text: [
+  'You saddle your horse and clean your carbine. A carbine is a short rifle that is carried on the saddle. You look after horses well, and you are the best tracker in the detachment. Hale knows this, and so does the sergeant.',
+  'Sergeant Doyle walks along the rail. “Ammunition from the store hut, all of you,” he says. “Hale wants us on the road within the hour.”',
+  'The other troopers do not talk much. They check their saddles and watch the officer’s hut.'
+ ],
+ real: [
+  { t: 'Troopers wore uniforms, rode horses and carried guns. Settlers and newspapers wrote that these things attracted recruits. Researchers say the uniform and equipment also showed who held power. A newspaper in 1853 reported that recruits had left because they were kept at drill for six months without uniforms, saddles or arms.', src: ['burke'] },
+  { t: 'Skill at tracking was valued. A newspaper writer in 1879 said troopers were chosen for “pluck and tracking prowess”.', src: ['burke'] }
+ ],
+ choices: [ { label: 'Collect your ammunition and wait for the officer.', to: 'briefing' } ],
+ teacher: { about: 'A short scene about equipment and skill.', ask: [ 'Why might an officer value a good tracker so much?' ], answers: [ 'A tracker could find people the officer could not. That made the tracker important to the work of the force, and also responsible in a way the officer could avoid.' ] }
+},
+
+corporal: { id: 'corporal', title: 'By the creek', text: [
+  'Corporal Tom is washing his shirt in the creek. He has served in the force for six years. That is longer than anyone else in the camp.',
+  '“There is a letter from a station,” he says. “Hale will use the word dispersal. Listen for it.”',
+  'You know what the word means. Everyone in the camp knows. In an officer’s report it sounds like a patrol sending people away. In the camp it means people are shot.',
+  '“Two men left in the night last season,” Tom says quietly. “They were not found. I did not see them go.” He looks at you. “I am telling you that I did not see.”',
+  'He picks up his shirt and walks back to the yard.'
+ ],
+ real: [
+  { t: 'Official papers used the word “disperse” for the shooting and killing of groups of Aboriginal people. It was a polite word that hid what happened.', src: ['nulungu', 'burke'] },
+  { t: 'Of 181 troopers named by the historian Lesley Skinner, 59 deserted or were discharged. That is 32 per cent. Sometimes a whole detachment left together.', src: ['burke'] }
+ ],
+ choices: [ { label: 'Go to the store hut and wait for the officer.', to: 'briefing' } ],
+ teacher: { about: 'Introduces “dispersal” as a euphemism, and the idea that troopers sometimes left.',
+  ask: [ 'Why do you think Tom says “I did not see”?' ],
+  answers: [ 'He is telling Billy that troopers sometimes helped each other leave, and that he will not report it. It is invented, but it fits the many recorded desertions. Students should notice that Tom is taking a risk by saying it.' ] }
+},
+
+briefing: { id: 'briefing', title: 'The briefing', text: [
+  'Hale comes out at last and stands on the verandah with the letter. He reads it aloud while Doyle watches the troopers.',
+  'The owner of Ridge Creek station says that one of his stockmen was found dead beside a waterhole two days ago. About forty cattle are missing. Nobody saw what happened. The owner asks for the police to find the people responsible and to disperse them.',
+  '“We ride at once,” Hale says. “You will do as you are told. If I am not there, the sergeant gives the orders. Billy, you will track.”',
+  'Hale folds the letter. Nobody speaks. You have a question, and you do not know whether to ask it.'
+ ],
+ real: [
+  { t: 'The main work of the Native Police was to answer settlers’ requests to “disperse” Aboriginal people in newly settled districts. The force moved north and west as new areas were taken up.', src: ['nulungu'] },
+  { t: 'Native Police often travelled with settlers who were taking up new pastoral runs in Central Queensland. Pastoral settlement there grew from the late 1840s, after Ludwig Leichhardt’s expedition passed through in 1844.', src: ['woor'] }
+ ],
+ choices: [
+  { label: 'Say nothing. Mount up.', to: 'ride' },
+  { label: 'Ask Hale what the order means for women, children and people who have done nothing.', to: 'ask' }
+ ],
+ teacher: { about: 'The central problem of the story: no one knows who killed the stockman, and the order does not ask.',
+  ask: [ 'The letter says “nobody saw what happened”. What does the order assume anyway?' ],
+  answers: [ 'It assumes the local people were responsible, and that any group of them could be punished. Students should link this to the idea of collective punishment.' ] }
+},
+
+ask: { id: 'ask', title: 'Your question', set: { asked: true }, text: [
+  'You step forward. It is not usual for a trooper to speak to the officer in front of the others.',
+  '“Sir, when we find the camp, who do we take? Only the men who did it?”',
+  'Hale looks at you for some time. “You will find them first,” he says. “Then I will decide. Do not ask me in front of the sergeant again.”',
+  'Doyle’s mouth is tight. Tom looks at the ground. Hale has not answered your question. You mount your horse.'
+ ],
+ real: [
+  { t: 'In 1861 a parliamentary committee in Queensland looked into charges of “unnecessary cruelty” by Native Police officers. It still recommended keeping the force, with better officers, discipline and reporting.', src: ['sc1861'] }
+ ],
+ choices: [ { label: 'Ride to Ridge Creek station.', to: 'ride' } ],
+ teacher: { about: 'Billy speaks up. The officer does not give an answer, which is the point.',
+  ask: [ 'Was Billy’s question safe to ask? What did it cost him?' ],
+  answers: [ 'It was not safe. Hale rebuked him in front of the others, and Doyle remembers it. Later in the story Doyle is suspicious of Billy. Students should say how speaking up can have a cost even when nothing dramatic happens straight away.' ] }
+},
+
+ride: { id: 'ride', title: 'Ridge Creek station', text: [
+  'The ride takes two days. On the afternoon of the second day the detachment reaches the station. It has a slab homestead, stockyards and a long paddock that runs down to a waterhole.',
+  'The owner, Mr Carver, comes to the gate with his overseer. “That waterhole is the only good water on my run,” he says. “The cattle drink there. The local people have camped near it for as long as anyone knows, and they will not move off.”',
+  'He shows you where the stockman was found. You look at the ground. You see the marks of cattle and shod horses. You see that the cattle have trampled the edge of the water and the old camping places.',
+  '“Find them,” says Carver.'
+ ],
+ real: [
+  { t: 'Historian Lyndall Ryan notes that frontier massacres usually took place in reprisal for the killing of a colonist, or for the alleged theft of livestock that had moved onto Aboriginal hunting grounds.', src: ['ryan'] },
+  { t: 'The Darumbal people, whose country includes the Rockhampton district, say that from the 1850s many of their people were driven from their land, and that survivors were later moved to missions such as Woorabinda, about 200 kilometres away.', src: ['darumbal'] }
+ ],
+ choices: [ { label: 'Start tracking.', to: 'tracks' } ],
+ teacher: { about: 'Shows the cause of conflict: water and land, and what the pastoralist expects the police to do.',
+  ask: [ 'Mr Carver says the people “will not move off”. Whose country is the waterhole?' ],
+  answers: [ 'It is the country of the local Aboriginal people. Students should notice how the owner’s words treat the people as the problem and the cattle as the reason to act.' ] }
+},
+
+tracks: { id: 'tracks', title: 'The path to the spring', text: [
+  'You follow the marks on the ground for a day and a half. You can tell many things from them: how many people walked there, how fast, and whether anyone carried small children. The path goes up a dry creek to a place with a spring and a stand of trees.',
+  'At dusk, from a ridge, you see smoke. You count the fires. There are about twenty people. There are older men, women and children, and some young men. A few spears lean against a tree. You see no cattle. You see nothing that belonged to the stockman.',
+  'Sergeant Doyle rides up beside you. “Well?” he says. “Is it them?”',
+  'You do not know whether these are the people who camped at the waterhole. You do not know whether any of them had anything to do with the stockman. Doyle is waiting for your answer.'
+ ],
+ real: [
+  { t: 'Aboriginal people resisted the loss of their country. In 1855 large groups of people attacked a Native Police camp and then a station in the Rockhampton region. One modern source describes these events as an alliance of the Gangalu, Darumbal, Bayali and Gureng Gureng peoples.', src: ['aww'] },
+  { t: 'Frontier massacres in Queensland were most common in the 1860s and 1870s. In the Colonial Frontier Massacres project a massacre means the deliberate killing of six or more undefended people in one operation.', src: ['massacres'] }
+ ],
+ choices: [
+  { label: 'Tell Doyle exactly what you see.', to: 'report' },
+  { label: 'Say the marks have gone cold, and lead the patrol away.', to: 'wrong' },
+  { label: 'Say you need a closer look, and go on alone after dark.', to: 'warn' }
+ ],
+ teacher: { about: 'First big choice. Each option is a different kind of response: do the job, mislead the patrol, or act in secret.',
+  ask: [ 'What does Billy know and not know at this point?', 'Which of the three choices would be the easiest for a trooper to do safely?' ],
+  answers: [ 'He knows the number of people and the place. He does not know if they are linked to the stockman’s death. Telling Doyle is the safest for him and the most dangerous for the people. Misleading Doyle or going alone carries risks for Billy. Students should explain who carries the risk in each choice.' ] }
+},
+
+report: { id: 'report', title: 'Your report', text: [
+  'You tell Doyle what you saw: the fires, the number of people and where the spring is. Doyle rides back to Hale.',
+  'Hale does not ask whether it is the right camp. “We go in before first light,” he says. “Troopers on the left and the right. Sergeant, you take the middle. Nobody fires until I give the word.”',
+  'You understand that there will be a word.'
+ ],
+ real: [
+  { t: 'Frontier massacres were usually planned, not sudden. They happened in secret, and no witnesses were meant to be there.', src: ['ryan'] }
+ ],
+ choices: [ { label: 'Lie down and wait for the morning.', to: 'night' } ],
+ teacher: { about: 'Billy’s information is used straight away. Notice that the officer does not check who the people are.', ask: [ 'What does Hale not ask?' ], answers: [ 'He does not ask whether these are the people who were near the waterhole, or whether they have any link to the stockman. Students should say what that shows about the purpose of the patrol.' ] }
+},
+
+night: { id: 'night', title: 'Before dawn', text: [
+  'You lie on your blanket and do not sleep. At about three in the morning Corporal Tom sits down next to you.',
+  '“I have done this before,” he says. “I will not tell you what to do. I will tell you that once it is done, it stays done. You will remember it for the rest of your life.”',
+  'The horses are saddled. In an hour it will be light.'
+ ],
+ real: [
+  { t: 'Researchers describe the lasting harm to trooper families and to Aboriginal communities. They use the idea of historical trauma to explain how violence in one generation affects the next.', src: ['burke'] }
+ ],
+ choices: [
+  { label: 'Ride in with the others when Hale gives the order.', to: 'end_report' },
+  { label: 'Tell Hale you will not go in.', to: 'arrest', set: { why: 'refused' } }
+ ],
+ teacher: { about: 'The decision point. The story does not make either option easy.', ask: [ 'Is Billy’s choice only between “right” and “wrong”? What does he risk each way?' ], answers: [ 'If he rides in he takes part in harm he knows about. If he refuses he is punished, and his refusal does not stop the patrol. Students should discuss why historians avoid simple judgments of the troopers, who were themselves taken from their own families and country.' ] }
+},
+
+wrong: { id: 'wrong', title: 'The wrong path', set: { via: 'wrong' }, text: [
+  'You tell Doyle the marks are going cold. You say the ground is hard and that the last rain has washed them out. You say it plainly and you do not look at him.',
+  'You lead the patrol east along a stony ridge. It is the wrong way. For two days you ride in a wide circle.',
+  'On the third day Hale halts the patrol and looks at the dry creek bed, and then at you. “The marks are gone,” you say. “Perhaps,” he says. He turns the patrol back to the station that afternoon.'
+ ],
+ real: [
+  { t: 'In 1861 Frederick Carr, a Native Police officer, told a parliamentary committee that harsh treatment was the main reason troopers deserted. He said: “Many desert from disliking their officers.”', src: ['burke', 'sc1861'] }
+ ],
+ choices: [ { label: 'Ride back to the station with the patrol.', to: 'empty' } ],
+ teacher: { about: 'A quiet act of resistance, and a risky one. There is no record of this particular act, so it is labelled invented.', ask: [ 'Why would a historian find it hard to know if troopers did this?' ], answers: [ 'A trooper who misled a patrol would not write it down, and an officer would not report it. Acts like this would leave almost no record.' ] }
+},
+
+warn: { id: 'warn', title: 'Alone in the dark', text: [
+  'You tell Doyle you need to see how many people there are. He grunts and lets you go.',
+  'You leave your horse tied below the ridge and walk down in the dark. You carry nothing in your hands. You know that if the patrol finds out, you will be punished.'
+ ],
+ real: [
+  { t: 'No record is known of a trooper warning a camp. This scene is invented. The story includes it because the records show only the officers’ side, and a story can ask what else might have happened.', src: ['burke'] }
+ ],
+ choices: [ { label: 'Walk down to the spring.', to: 'council' } ],
+ teacher: { about: 'Invented. The scene allows students to think about agency and the limits of the historical record.', ask: [ 'The story says no record is known. Does that mean it never happened?' ], answers: [ 'No. Absence of a record is not proof. Students can discuss how the surviving records were made and who made them.' ] }
+},
+
+council: { id: 'council', title: 'At the spring', text: [
+  'Two young men see you first and pick up spears. You show them your empty hands. An old woman comes out of the shadows. She looks at your jacket, your boots and the buttons. She does not look afraid.',
+  'A young man who has worked on stations speaks some English, and he repeats her words to you. “She says she knows who you are. She says the police have come before. The people have learned what the sound of the horses means. They already planned to leave at first light.”',
+  'The old woman speaks again, and the young man waits before he translates. “She asks which side you are on.”',
+  'You do not have an easy answer. You tell them the patrol is on the ridge and that it will come in at dawn. The old woman nods once. She has decided what to do, and she did not need you to tell her.'
+ ],
+ real: [
+  { t: 'Survivors of Native Police operations in Central Queensland were later often used as cheap labour on pastoral stations, or lived on the edges of settlements.', src: ['woor'] },
+  { t: 'Troopers who deserted feared the people of the country they had to cross. A trooper named Georgey said in a petition in 1863 that he was afraid to be left in the bush, far from his own people, among people who hated his people.', src: ['georgey'] }
+ ],
+ choices: [
+  { label: 'Ask if you can go with them.', to: 'end_stand' },
+  { label: 'Go back before the patrol knows you have gone.', to: 'empty', set: { via: 'warned' } }
+ ],
+ teacher: { about: 'Invented. The woman and the young man are not named, and no language, nation or custom is described, because inventing these would be wrong. The scene gives the local people their own decisions.', ask: [ 'Who makes the decisions in this scene? How does the writer show that?' ], answers: [ 'The old woman decides what her people will do. Billy’s news adds little to what she already planned. Students should notice the writer chose to give the decision to her.' ] }
+},
+
+empty: { id: 'empty', title: 'An empty place', text: [
+  { if: { via: 'warned' }, t: 'You get back to your horse before the sky turns grey. At first light the patrol rides in. The camp at the spring is empty. The fires are still warm. There are footprints going up into the stony ranges where horses cannot follow.' },
+  { if: { via: 'wrong' }, t: 'At the station Mr Carver is not pleased. He tells Hale that his cattle will still be taken and that the force is no use to him.' },
+  'Hale writes his report that night. Doyle stands near you and speaks to Hale in a voice that you can hear. “That tracker,” he says. “I am not sure about him.”',
+  { if: { asked: true }, t: 'He remembers that you asked a question in front of the whole detachment.' },
+  'Hale does not answer. He looks at you for a long time.'
+ ],
+ real: [
+  { t: 'Native Police detachments moved north and west as the frontier moved, and the work of “dispersal” began again in each new district.', src: ['nulungu'] }
+ ],
+ choices: [
+  { label: 'Say nothing.', to: 'end_empty' },
+  { label: 'Tell Hale what you did, because you cannot keep lying.', to: 'arrest', set: { why: 'confessed' } }
+ ],
+ teacher: { about: 'Both earlier acts of quiet resistance meet here.', ask: [ 'Why might a person choose to confess? What would they gain, and lose?' ], answers: [ 'Confessing may bring relief and a clear conscience. It brings punishment. Students should say whether Billy’s truth would help anyone.' ] }
+},
+
+arrest: { id: 'arrest', title: 'In irons', text: [
+  { if: { why: 'refused' }, t: '“I will not ride in,” you say. You say it where the other troopers can hear. Hale answers in a flat voice. “You are refusing an order.”' },
+  { if: { why: 'confessed' }, t: 'You tell Hale what you did. Hale listens until you finish. “You lied to me,” he says. “You lied in front of my men.”' },
+  'Doyle takes your carbine and puts irons on your wrists. “Disobedience,” he says. “It will be dealt with at the camp.”',
+  { if: { why: 'refused' }, t: 'The patrol rides out without you. Tom does not look back. You are left chained to a tree beside the supply horses, with one trooper to watch you. The patrol comes back in the afternoon. Nobody tells you what happened, and nobody looks at you.' },
+  { if: { why: 'confessed' }, t: 'The patrol turns back to the camp with you in irons at the end of the line.' },
+  'That night at the camp, Tom comes to the lean-to where you are chained. He is alone and he carries a water bag. He looks at the irons and then at the yard. “I did not see this,” he says. He puts the water down and walks away.'
+ ],
+ real: [
+  { t: 'Troopers who refused orders or left the force were punished. Historian Jonathan Richards lists ten troopers who were shot for desertion, including two in 1863 and one in 1880.', src: ['burke'] },
+  { t: 'An inquiry in 1876 into the deaths of two troopers heard evidence that troopers were flogged. A witness said it was “a general occurrence in every Native Police camp”.', src: ['burke'] }
+ ],
+ choices: [
+  { label: 'Wait for the punishment Hale decides on.', to: 'end_irons' },
+  { label: 'Check the irons now that Tom has gone.', to: 'run' }
+ ],
+ teacher: { about: 'Based on what the records show about punishment. The detail is kept brief on purpose.', ask: [ 'Why is the punishment shown only briefly?' ], answers: [ 'The story treats the violence honestly but does not describe it in detail. Students can discuss the difference between telling something truthfully and showing it graphically.' ] }
+},
+
+run: { id: 'run', title: 'Leaving in the dark', text: [
+  'The lock on the irons was not closed all the way. You slip your hands out and sit still until the camp is quiet.',
+  'The camp is dark. Your horse is in the yard and your carbine is in the sergeant’s hut. You know that men who leave the force are hunted.',
+  'You can go on foot with nothing that belongs to the force. That will be slow, and you will have little food. Or you can take your horse. That is faster, and the sergeant will count a stolen horse as another crime.'
+ ],
+ real: [
+  { t: 'In 1863 a trooper called Georgey petitioned the Governor of Queensland. He said he left the force after being badly treated by a camp sergeant. He said he knew that troopers who left had been shot. He wrote that he did not want to stay in the Native Police any longer.', src: ['georgey'] }
+ ],
+ choices: [
+  { label: 'Go on foot, and take nothing that belongs to the force.', to: 'end_leave' },
+  { label: 'Take your horse.', to: 'pursuit' }
+ ],
+ teacher: { about: 'Desertion was common. This scene points to the real petition of Georgey, one of the few records in a trooper’s own words.', ask: [ 'Why would a trooper be afraid to leave the force?' ], answers: [ 'Because the force shot deserters, because troopers were far from home, and because they could be hunted by other troopers. Georgey said all this in his own words.' ] }
+},
+
+pursuit: { id: 'pursuit', title: 'Dust behind you', text: [
+  'On the third day you see dust behind you. Doyle and two troopers are following. They are men like you, doing a job they cannot refuse. They are good trackers, and you know it because you are one too.',
+  'You are tired, and the horse is tired. You know that Doyle will not stop.'
+ ],
+ real: [
+  { t: 'Desertions are recorded for single troopers and for whole detachments. In Georgey’s case in 1863, a lieutenant and troopers arrested him at a station and took him back to the barracks in irons.', src: ['burke', 'georgey'] }
+ ],
+ choices: [
+  { label: 'Leave the horse and hide in the broken ground.', to: 'end_leave' },
+  { label: 'Stop and give yourself up before anyone is hurt.', to: 'end_irons' }
+ ],
+ teacher: { about: 'The troopers who pursue Billy are also Aboriginal men working under orders.', ask: [ 'How does this scene change the idea that the force was simply “Aboriginal men against Aboriginal people”?' ], answers: [ 'It shows that the troopers were also controlled and often afraid. They worked under white officers who gave the orders and held the power. Historians stress that troopers had very limited choices and that the force was a colonial tool.' ] }
+}
+
+}
+});
