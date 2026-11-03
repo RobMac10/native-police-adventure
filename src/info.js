@@ -1,0 +1,196 @@
+// The Native Mounted Police in Queensland: information bank. All text, facts, quotations and questions.
+// Every fact has a source key from src/sources.js. Nothing in this file is invented.
+// "discuss" and "teacherNotes" are removed from the student build by build.js.
+window.INFO = {
+id: 'npa',
+title: 'The Native Mounted Police in Queensland',
+subtitle: 'An information bank about the force, 1849 to 1904, with a focus on Central Queensland',
+description: 'A non-fiction information bank about the Native Mounted Police in Queensland: an overview, timeline, places, people and groups, real lives, and sources. Includes a cultural content warning.',
+dateLeft: 'Queensland · 1849 to 1904',
+dateRight: 'By Robin McKean',
+theme: '#2b2118',
+footnote: 'This resource may contain names and images of deceased Aboriginal and Torres Strait Islander people. Everything in it comes from the sources listed on the Sources page.',
+footer: 'By Robin McKean. This is a non-fiction information bank. It has no tracking and no cookies. An earlier choose-your-path story version is kept in the archive folder of the project on GitHub.',
+warning: [
+  'This resource may contain names and images of deceased Aboriginal and Torres Strait Islander people.',
+  'It is about the Native Police and frontier violence in Queensland. It does not describe violence in detail, but it does say that it happened. You can stop at any time. If this upsets you, talk to a teacher, a family member or someone you trust.'
+],
+review: 'Review status: this resource has not yet been reviewed by Traditional Owners. Teachers, please seek advice from the Traditional Owners of your area before using it in class. In Central Queensland they include, for example, the Darumbal, Gaangalu and Wulli Wulli peoples.',
+sourcesIntro: 'Every fact in this resource comes from one of these sources. The people who wrote most of the records of the time were officers, officials and settlers, so the records show their side. Very little is known from the troopers themselves.',
+imageNote: 'There are two images from the public domain in Australia, both credited. There are no AI images. The 1864 photograph of a detachment shows men who have died and is behind a “View photograph” button.',
+overview: {
+  image: 'quay',
+  lead: 'The Native Mounted Police, usually called the Native Police, was a force of Aboriginal men led by white officers. It worked in Queensland from the late 1840s until it was formally disbanded in 1904. Its main work was to answer settlers’ requests to “disperse” Aboriginal people in newly settled districts.',
+  glance: [
+    { n: 'About 100', label: 'Aboriginal troopers when Queensland became a separate colony in 1859', src: ['qsa', 'woor'] },
+    { n: '4 to 12', label: 'troopers usually at one camp, under one European officer', src: ['nulungu'] },
+    { n: '59 of 181', label: 'troopers named by historian Lesley Skinner who deserted or were discharged (32 per cent)', src: ['burke'] },
+    { n: '1904', label: 'the year the Native Mounted Police were formally disbanded', src: ['nulungu'] }
+  ],
+  sections: [
+    { h: 'What the force was', p: [
+      'The first Native Police camp in what became Queensland was set up in May 1849 at Callandoon, on the present border with New South Wales. A Native Police camp usually had four to twelve troopers under one European officer. One or two white men might also live at the camp as camp keepers.',
+      'When Queensland separated from New South Wales in 1859, the force had a commandant, lieutenants, camp sergeants and about 100 Aboriginal troopers. Its headquarters were at Rockhampton. A barracks was built at Rockhampton in 1860 and another on the Nogoa River in 1861.'
+    ], src: ['atf', 'nulungu', 'qsa', 'woor'] },
+    { h: 'How men came to the force', p: [
+      'The records name several ways that men came into the force. These include force, kidnapping, offers such as a shorter prison sentence, and joining that may have looked like a free choice. In 1878 the Executive Council approved cutting prison sentences for Aboriginal men who joined. A parliamentary committee in 1861 heard that boys were being taken by force from inland stations.',
+      'In the early years troopers were often brought from far away, so that they had no family ties to the people they were sent against. By the 1870s troopers were more often posted nearer their home region. A trooper could still be a stranger in another nation’s country, even a short distance from home.',
+      'No account is known from any trooper of how he was recruited. The people who wrote the records were the officers and settlers.'
+    ], src: ['burke', 'sc1861'] },
+    { h: 'What the records say about the work', p: [
+      'The main work of the Native Police was to answer settlers’ requests to “disperse” Aboriginal people in newly settled districts. The force moved north and west as new areas were taken up. Native Police often travelled with settlers who were taking up new pastoral runs in Central Queensland. Pastoral settlement there grew from the late 1840s, after Ludwig Leichhardt’s expedition passed through in 1844.',
+      'Official papers used the word “disperse” for the shooting and killing of groups of Aboriginal people. It was a polite word that hid what happened. Historian Lyndall Ryan notes that frontier massacres usually took place in reprisal for the killing of a colonist, or for the alleged theft of livestock that had moved onto Aboriginal hunting grounds. She also notes that they were usually planned, not sudden, and that they happened in secret.'
+    ], src: ['nulungu', 'burke', 'woor', 'ryan'] },
+    { h: 'Troopers, discipline and desertion', p: [
+      'Troopers were given English names while in the force, and many of these names were insulting. Only some troopers kept their own names in the records.',
+      'Troopers who refused orders or left the force were punished. Historian Jonathan Richards lists ten troopers who were shot for desertion, including two in 1863 and one in 1880. An inquiry in 1876 into the deaths of two troopers heard evidence that troopers were flogged. A witness said it was “a general occurrence in every Native Police camp”. In 1861 a Native Police officer, Frederick Carr, told a parliamentary committee that harsh treatment was the main reason troopers deserted.'
+    ], src: ['burke', 'sc1861'] },
+    { h: 'Aboriginal resistance and what followed', p: [
+      'Aboriginal people resisted the loss of their country. In 1855 large groups of people attacked a Native Police camp and then a station in the Rockhampton region. One modern source describes these events as an alliance of the Gangalu, Darumbal, Bayali and Gureng Gureng peoples.',
+      'The Darumbal people, whose country includes the Rockhampton district, say that from the 1850s many of their people were driven from their land, and that survivors were later moved to missions such as Woorabinda, about 200 kilometres away. Survivors of Native Police operations in Central Queensland were later often used as cheap labour on pastoral stations, or lived on the edges of settlements.',
+      'Researchers describe the lasting harm to trooper families and to Aboriginal communities. They use the idea of historical trauma to explain how violence in one generation affects the next.'
+    ], src: ['aww', 'darumbal', 'woor', 'burke'] },
+    { h: 'The end of the force', p: [
+      'From 1877 the numbers of Native Police were reduced across the colony. On 1 June 1880 the Commissioner of Police wrote that several detachments had been broken up, and that the troopers had been placed at ordinary police stations as trackers. The Native Mounted Police were formally disbanded in 1904.'
+    ], src: ['kirk84', 'qsa', 'nulungu'] }
+  ],
+  words: [
+    ['Native Police', 'The Native Mounted Police, a force of Aboriginal troopers led by European officers.'],
+    ['Trooper', 'An Aboriginal man serving in the force.'],
+    ['Disperse, dispersal', 'The word used in official papers for breaking up Aboriginal groups by force. The sources say it was used for shooting and killing.'],
+    ['Detachment', 'A group of troopers and their officer stationed at a camp or sent to a place.'],
+    ['Desertion', 'Leaving the force without permission.'],
+    ['Petition', 'A written request to a person in authority. In 1863 Georgey sent one to the Governor of Queensland.']
+  ],
+  left: [
+    'This resource does not describe individual killings of Aboriginal people in detail. The sources show that they happened, and the overview says so plainly. Real events belong to the people and families who remember them. For the records of conflict events, see the Frontier Conflict database and the Colonial Frontier Massacres map listed on the Sources page.',
+    'It does not describe Aboriginal ceremony, language, law or family connections, because these belong to Traditional Owners.',
+    'It uses the words of the time only where needed (“Native Police”, “trooper”, “disperse”). It does not repeat the insulting words that appear in many historical records.',
+    'The conflict near Springsure in 1861 is covered, with its sources, in the Grass Rush information bank: https://robmac10.github.io/grass-rush-adventure/'
+  ]
+},
+timeline: [
+  { date: 'May 1849', title: 'The first Native Police camp in what became Queensland', text: 'Commandant Frederick Walker set up a camp at Callandoon, on the present border. He had 14 troopers recruited from the Murrumbidgee and Murray River areas of southern New South Wales and northern Victoria.', src: ['atf'] },
+  { date: '1851', title: 'Squatters build barracks', text: 'After asking for help, squatters built barracks at Wandai Gumbal, near the present Condamine, at their own expense.', src: ['atf'] },
+  { date: '1853', title: 'Recruits leave', text: 'A newspaper reported that recruits had left because they were kept at drill for six months without uniforms, saddles or arms.', src: ['burke'] },
+  { date: '1855', title: 'Attacks near Rockhampton', text: 'Large groups of Aboriginal people attacked a Native Police camp and then a station in the Rockhampton region. One modern source describes the events as an alliance of the Gangalu, Darumbal, Bayali and Gureng Gureng peoples.', flag: 'This description of an alliance comes from one source, and the names of the peoples are spelled differently across the sources used here (Gaangalu, Gangalu).', src: ['aww'] },
+  { date: '10 December 1859', title: 'Queensland becomes a separate colony', text: 'The force then had a commandant, lieutenants, camp sergeants and about 100 Aboriginal troopers. Its headquarters were at Rockhampton.', src: ['abs150', 'qsa', 'woor'] },
+  { date: '1860 and 1861', title: 'Barracks at Rockhampton and on the Nogoa River', text: 'A barracks was built at Rockhampton in 1860 and another on the Nogoa River in 1861.', src: ['qsa', 'woor'] },
+  { date: '1861', title: 'Parliamentary committee on the Native Police', text: 'A select committee of the Queensland parliament looked into charges of “unnecessary cruelty” by Native Police officers and into the condition of Aboriginal people. It heard that boys were being taken by force from inland stations. It recommended keeping the force, with better officers, discipline and reporting. Officer Frederick Carr told the committee that harsh treatment was the main reason troopers deserted. He said: “Many desert from disliking their officers.”', src: ['sc1861', 'burke'] },
+  { date: 'About December 1862', title: 'Georgey leaves the force', text: 'In his petition of 1863, Georgey says he left the force “about December last”, after about two and a half years as a trooper.', flag: 'The year 1862 is worked out from the date of the petition (6 May 1863). The petition does not give the year.', src: ['georgey'] },
+  { date: '1863', title: 'Two troopers shot for desertion', text: 'Historian Jonathan Richards lists ten troopers who were shot for desertion. Two of them were shot in 1863 and one in 1880.', src: ['burke'] },
+  { date: '6 May 1863', title: 'The petition of Georgey', text: 'Georgey, a trooper who had left the force, petitioned the Governor of Queensland. The petition was printed in the Courier (Brisbane) on 7 May 1863. See Real lives.', src: ['georgey'] },
+  { date: '1864', title: 'A detachment photographed at Rockhampton', text: 'A photograph shows Lieutenant George Murray and his detachment of Native Mounted Police at Rockhampton. It names the troopers by the names used for them in the force. It is on the Real lives page, behind a “View photograph” button.', src: ['photo'] },
+  { date: '1860s and 1870s', title: 'The most frontier massacres in Queensland', text: 'Frontier massacres in Queensland were most common in the 1860s and 1870s. In the Colonial Frontier Massacres project a massacre means the deliberate killing of six or more undefended people in one operation.', src: ['massacres'] },
+  { date: '1 February 1873', title: 'Eleven men enlisted in one week at Rockhampton', text: 'The Rockhampton Bulletin reported that eleven men were enlisted in one week, chosen from a large number who had “presented themselves”. The researchers who quote this say it is unlikely that many recruits were truly willing.', src: ['blog'] },
+  { date: '1876', title: 'Inquiry into the deaths of two troopers', text: 'The inquiry heard evidence that troopers were flogged. A witness said it was “a general occurrence in every Native Police camp”.', src: ['burke'] },
+  { date: 'From 1877', title: 'Fewer Native Police', text: 'The numbers of Native Police were reduced across the colony. By 1880 the number was less than half that of 1876.', src: ['kirk84'] },
+  { date: '1878', title: 'Shorter sentences for men who join', text: 'The Executive Council approved cutting prison sentences for Aboriginal men who joined the force.', src: ['burke'] },
+  { date: '1 June 1880', title: 'Detachments broken up', text: 'The Commissioner of Police wrote that several detachments had been broken up and that the troopers had been placed at ordinary police stations as trackers. He called this “the gradual disembodying of the Native Police Force”.', src: ['qsa'] },
+  { date: '1904', title: 'The force is formally disbanded', text: 'The Native Mounted Police were formally disbanded in 1904.', src: ['nulungu'] }
+],
+places: [
+  { name: 'Rockhampton', where: 'Central Queensland · Darumbal Country', image: 'quay', text: [
+    'Rockhampton was the headquarters of the Native Police when Queensland separated from New South Wales in 1859. A barracks was built there in 1860. Quay Street on the Fitzroy River in 1864 is shown in the photograph above.',
+    'The Darumbal people, whose country includes the Rockhampton district, say that from the 1850s many of their people were driven from their land. In 1855 a Native Police camp and then a station in the Rockhampton region were attacked. In February 1873 a Rockhampton newspaper reported eleven men enlisted in one week.'
+  ], src: ['qsa', 'woor', 'darumbal', 'aww', 'blog'] },
+  { name: 'Callandoon', where: 'On the present Queensland and New South Wales border', text: [
+    'Commandant Frederick Walker set up the first Native Police camp in what became Queensland here in May 1849, with 14 troopers from the Murrumbidgee and Murray River areas.'
+  ], src: ['atf'] },
+  { name: 'Wandai Gumbal', where: 'Near the present Condamine', text: [
+    'In 1851 squatters built barracks here at their own expense, after asking for help.'
+  ], src: ['atf'] },
+  { name: 'The Nogoa River', where: 'Central Queensland', text: [
+    'A barracks was built on the Nogoa River in 1861.'
+  ], src: ['qsa', 'woor'] },
+  { name: 'Central Queensland pastoral runs', where: 'Central Queensland', text: [
+    'Native Police often travelled with settlers who were taking up new pastoral runs in Central Queensland. Pastoral settlement there grew from the late 1840s, after Ludwig Leichhardt’s expedition passed through in 1844. The force moved north and west as new areas were taken up.'
+  ], src: ['woor', 'nulungu'] },
+  { name: 'Woorabinda', where: 'About 200 kilometres from Rockhampton', text: [
+    'The Darumbal people say that survivors of the loss of their land were later moved to missions such as Woorabinda.'
+  ], src: ['darumbal', 'woor'] }
+],
+people: [
+  { kind: 'group', name: 'Native Police troopers', text: 'Aboriginal men who served in the force. Many came by force, kidnapping, offers such as a shorter prison sentence, or in ways that may have looked like free choice. They were given English names in the force, and many of the names were insulting. Only some troopers kept their own names in the records.', src: ['burke'] },
+  { kind: 'group', name: 'European officers and camp sergeants', text: 'White men who led the troopers. A camp usually had four to twelve troopers under one European officer. One or two white men might also live at the camp as camp keepers.', src: ['nulungu'] },
+  { kind: 'group', name: 'Settlers and squatters', text: 'The people who asked the Native Police to “disperse” Aboriginal people in newly settled districts, and who wrote many of the records.', src: ['nulungu', 'burke'] },
+  { kind: 'group', name: 'The Darumbal people', text: 'Traditional Owners of the Rockhampton district. They say that from the 1850s many of their people were driven from their land, and that survivors were later moved to missions such as Woorabinda.', src: ['darumbal'] },
+  { kind: 'group', name: 'Gangalu, Bayali and Gureng Gureng peoples', text: 'Named with the Darumbal in one modern source as the peoples who took part in the attacks of 1855 near Rockhampton. The name of the Gangalu people is spelled differently in different sources (Gaangalu, Gangalu).', src: ['aww'] },
+  { kind: 'person', name: 'Frederick Walker', dates: 'Commandant in 1849', text: 'Set up the first Native Police camp in what became Queensland, at Callandoon in May 1849, with 14 troopers.', src: ['atf'] },
+  { kind: 'person', name: 'Lieutenant George Murray', dates: 'Rockhampton, 1864', text: 'The officer in the 1864 photograph of a detachment at Rockhampton.', src: ['photo'] },
+  { kind: 'person', name: 'Frederick Carr', dates: 'Evidence in 1861', text: 'A Native Police officer who told the 1861 parliamentary committee that harsh treatment was the main reason troopers deserted.', src: ['burke', 'sc1861'] },
+  { kind: 'person', name: 'Georgey', dates: 'Petition of 1863', text: 'A trooper from the Darling Downs district who petitioned the Governor in 1863. See Real lives.', src: ['georgey'] },
+  { kind: 'person', name: 'Jonathan Richards', dates: 'Historian', text: 'Lists ten troopers who were shot for desertion, including two in 1863 and one in 1880.', src: ['burke'] },
+  { kind: 'person', name: 'Lesley Skinner', dates: 'Historian', text: 'Named 181 troopers. Of these, 59 (32 per cent) deserted or were discharged.', src: ['burke'] },
+  { kind: 'org', name: 'Select Committee of 1861', text: 'A committee of the Queensland Legislative Assembly on the Native Police Force and the Condition of the Aborigines Generally. It recommended keeping the force, with better officers, discipline and reporting.', src: ['sc1861'] },
+  { kind: 'org', name: 'Executive Council of Queensland', text: 'In 1878 it approved cutting prison sentences for Aboriginal men who joined the force.', src: ['burke'] },
+  { kind: 'org', name: 'Commissioner of Police', text: 'On 1 June 1880 he wrote that detachments were being broken up and troopers placed at ordinary police stations as trackers.', src: ['qsa'] }
+],
+lives: [
+  { name: 'Georgey', dates: 'Petition dated 6 May 1863', text: [
+    'Georgey was an Aboriginal man from the Darling Downs district. In 1863 he sent a petition to the Governor of Queensland, Sir George Bowen. Very little is known from the troopers themselves, so a petition written in a trooper’s name is a rare place to read his account.',
+    'The petition says he entered the Native Police about two and a half years earlier and stayed a trooper until about December of the year before. He says he left without his officer’s leave after the white camp sergeant took a woman from him and ill-treated him when he spoke about it. (The petition uses an offensive word for her. It is not repeated here.)',
+    'He says that early in 1863 Lieutenant Carr arrested him at the station of his old master, W. H. Coxen, at Bendemere. He says he was fastened to a trooper’s stirrup and dragged to the barracks at Elutha, about fifty miles away, and put in irons in the guard room. He says he then had his irons taken off, ran away, and went back to Mr Coxen’s station. He also says that, when he was arrested, Lieutenant Carr said in front of Mr Coxen’s servants that if he did his duty he would shoot Georgey on the spot, as he had done to two others.'
+  ], quote: { lines: [
+    'That I ran away because I knew that the Native Police had shot boys who left the force without leave as I knew a boy had been shot in camp under arrest for desertion and that I was therefore to be shot too.',
+    'That I will give myself up to be punished if I have done wrong if I am protected from the Native Troopers',
+    'That I do not wish to remain in the Native Police any longer'
+  ], by: 'Georgey, petition to the Governor, 6 May 1863. Spelling as in the transcription.' },
+  after: [
+    'Georgey also wrote that he would have left the force when his officer asked him, in the Rockhampton district, if he wanted to leave, but that he “was afraid of being turned into the bush naked amongst … who hated my people and so far from my own tribe”. (A period word for people has been left out at the three dots.) He asked the Governor for “that protection which I am told as a Boy and an Aboriginal Native I am entitled to from the Queen and the Governor”.',
+    'The petition is signed “The mark of Georgey”, with an X. A witness, a solicitor in Brisbane, wrote that he had first read over and explained the petition to Georgey. So the words were written down by someone else, and the sources read here do not say how closely they follow what Georgey said.',
+    'A note on the document says that the case “not being at present properly constituted by law this petitioner had perhaps better be let go”, and that the officer, Lieutenant Carr, “does not appear to have acted otherwise therein in accordance with the general instructions”. The Governor’s office told Mr Coxen that the petition would go before the Executive Council. The sources read here do not say what the Council decided.'
+  ], flag: 'The petition is read here from a volunteer transcription of Queensland State Archives item QSA846769. The transcription marks the solicitor’s name with a question mark. A note dated “1 June 62” is written on the document; that year does not match the petition’s date of 1863, so check the original.', src: ['georgey'] },
+  { name: 'The men in the 1864 photograph at Rockhampton', dates: '1864', text: [
+    'A photograph from 1864 shows Lieutenant George Murray and his detachment. The back row shows Trooper Carbine, Lieutenant Murray, a second lieutenant and a camp sergeant whose names are not recorded, and Corporal Michael. The front row shows Troopers Barney, Hector, Goondallie, Balantyne and Patrick.',
+    'These are the names used for the men in the force. Their own names are not recorded in the caption. Records at the time often gave troopers English names. The photograph is held by the Queensland Police Museum. It is in the public domain in Australia.'
+  ], image: 'murray', src: ['photo', 'burke'] }
+],
+know: [
+  { t: 'Troopers wore uniforms, rode horses and carried guns. Settlers and newspapers wrote that these things attracted recruits. Researchers say the uniform and equipment also showed who held power.', src: ['burke'] },
+  { t: 'Skill at tracking was valued. A newspaper writer in 1879 said troopers were chosen for “pluck and tracking prowess”.', src: ['burke'] },
+  { t: 'The word “disperse” was used in official papers for the shooting and killing of groups of Aboriginal people.', src: ['nulungu', 'burke'] },
+  { t: 'Of 181 troopers named by the historian Lesley Skinner, 59 deserted or were discharged. Sometimes a whole detachment left together.', src: ['burke'] },
+  { t: 'Historian Jonathan Richards lists ten troopers who were shot for desertion, including two in 1863 and one in 1880.', src: ['burke'] },
+  { t: 'In the Colonial Frontier Massacres project, a massacre means the deliberate killing of six or more undefended people in one operation.', src: ['massacres'] },
+  { t: 'Frontier massacres were usually planned, not sudden. They happened in secret, and no witnesses were meant to be there.', src: ['ryan'] },
+  { t: 'A Rockhampton newspaper reported in February 1873 that eleven men were enlisted in one week. The researchers who quote this say it is unlikely that many recruits were truly willing.', src: ['blog'] },
+  { t: 'Pastoral settlement in Central Queensland grew from the late 1840s, after Ludwig Leichhardt’s expedition passed through in 1844.', src: ['woor'] },
+  { t: 'Georgey’s petition is signed with a mark, and a solicitor wrote that he had read it over and explained it to Georgey.', src: ['georgey'] }
+],
+disagree: [
+  'Whether troopers “volunteered” is hard to say. The records were written by officers and settlers, and no account is known from any trooper of how he was recruited. Researchers say it is unlikely that many recruits were truly willing.',
+  'The names of the peoples are spelled differently across the sources: Gaangalu, Gangalu. This resource gives the spelling used in each source, and the spellings should be checked with the peoples concerned.',
+  'The alliance of the Gangalu, Darumbal, Bayali and Gureng Gureng peoples in 1855 is described by one modern source (Australian Wars and Resistance). It has not been checked against a second source.',
+  'The year Georgey left the force (about December 1862) is worked out from the date of his petition. A note on the petition is dated “1 June 62”, which does not match 1863. The original should be checked.',
+  'The figure of about 100 troopers in 1859 comes from Queensland government sources. This resource does not give totals for other years, because the sources read here do not give them.',
+  'Nothing is known from the sources read here about what the Executive Council decided about Georgey’s petition.'
+],
+care: [
+  'Aboriginal and Torres Strait Islander readers are advised that this resource may contain names and images of deceased people. It deals with frontier violence.',
+  'The troopers were Aboriginal men. Many had been taken from their own families and country, or had very little choice. The people who were targeted by the force are not only victims. Aboriginal people in Central Queensland resisted the loss of their country.',
+  'This resource was written by a non-Aboriginal author. It has not yet been reviewed by Traditional Owners. Please seek review, for example from the Darumbal, Gaangalu and Wulli Wulli peoples, before using it in class. Please tell the author if anything needs to change.'
+],
+readMore: ['fcdb', 'qsa'],
+images: {
+  quay: { file: 'images/rockhampton-quay-1864.jpg', w: 1000, h: 601, alt: 'A black and white photograph of a river bank with ships tied up at a wharf. A few low buildings stand beside a wide dirt street on the right, and a verandah post stands in the front left.', caption: 'Ships docked at the wharf in Quay Street, Rockhampton, 1864.', credit: 'John Oxley Library, State Library of Queensland (public domain)', url: 'https://commons.wikimedia.org/wiki/File:StateLibQld_1_51152_Ships_docked_at_the_wharf_in_Quay_Street,_Rockhampton,_1864.jpg' },
+  murray: { file: 'images/native-mounted-police-rockhampton-1864.jpg', w: 899, h: 642, people: true, summary: 'Lieutenant Murray’s detachment, Rockhampton, 1864 (it shows people who have died)', alt: 'A black and white photograph of an officer, a camp sergeant and troopers of the Native Mounted Police standing in two rows at Rockhampton in 1864.', caption: 'Lieutenant George Murray and his detachment of Native Mounted Police at Rockhampton, 1864. The names are those used for the men in the force.', credit: 'Queensland Police Museum (public domain in Australia)', url: 'https://commons.wikimedia.org/wiki/File:Queensland_Native_Police_1864.jpg' }
+},
+teacherNotes: [
+  'Before you use this in class, please seek advice from the Traditional Owners of your area. The resource was written by a non-Aboriginal author and has not yet been reviewed by Traditional Owners.',
+  'Give students the content warning before they start. Tell them they may stop at any time. Check whether any students have family connections to the events. Offer an alternative task if needed.',
+  'A suggested lesson: 10 minutes to read the content warning and discuss respect; 20 minutes reading the Overview, Timeline and Georgey’s petition; 20 minutes for discussion and one writing task.',
+  'The answers are suggestions. They are behind “Show” buttons. The student version has no answers in its code.',
+  'The resource does not describe individual killings in detail. Students may ask what happened. Use the Overview and the sources to answer plainly and calmly.'
+],
+discuss: [
+  { q: 'The records use the word “dispersal”. What did it mean, and why did officers and officials use it?', a: ['It meant the shooting and killing of groups of Aboriginal people. Officials used a polite word that hid what happened.', 'Students should explain why the choice of word matters when we read records.'] },
+  { q: 'List the ways men came to the Native Police. Which sources say so? Why is it hard to say whether someone “volunteered”?', a: ['Force, kidnapping, offers such as a shorter prison sentence, and joining that may have looked like a free choice. The sources are Burke and others (2018) and the 1861 Select Committee.', 'It is hard to say because the records were written by officers and settlers, and no account is known from any trooper of how he was recruited. Researchers say it is unlikely that many recruits were truly willing.'] },
+  { q: 'Almost all the records of the Native Police were written by officers and settlers. What is missing? What can a historian do when a group’s voices are missing from the records?', a: ['Missing: the voices of the troopers and of the Aboriginal people who were targeted.', 'A historian can read records carefully for bias, use oral history from families and communities, use archaeology and databases such as the Frontier Conflict database, and say clearly where the evidence stops.'] },
+  { q: 'Read Georgey’s petition on the Real lives page. What reasons does he give for leaving the force? Why does he say he ran away? What does he ask for?', a: ['He says the white camp sergeant took a woman from him and ill-treated him when he spoke about it. He says he ran away because he knew that troopers who left without leave had been shot, and that a boy had been shot in camp under arrest for desertion.', 'He asks to be protected from the Native Troopers, says he will give himself up to be punished if he has done wrong, and says he does not want to stay in the Native Police. He also asks for the protection he is told he is entitled to from the Queen and the Governor.'] },
+  { q: 'Georgey’s petition is signed with a mark, and a solicitor wrote that he had read it over and explained it to Georgey. How does this affect how we use it as a source? What would you want to find out?', a: ['The words were written by someone else, and the sources read here do not say how closely they follow what Georgey said. It is still one of the few places where a trooper’s account can be read.', 'Students might ask who the solicitor was, why he helped, who paid, what the Executive Council decided, and what happened to Georgey afterwards. The sources read here do not answer these.'] },
+  { q: 'Compare the petition with the records of desertion. Historian Jonathan Richards lists ten troopers shot for desertion, and Lesley Skinner counted 59 of 181 named troopers who deserted or were discharged. Does the petition fit these figures?', a: ['Georgey says he knew of a boy shot in camp under arrest for desertion. Richards lists ten troopers shot for desertion, including two in 1863. The figures show that desertion was common and that some deserters were shot, so Georgey’s fear fits the pattern in the records.', 'A careful answer notes that a petition is one person’s account, and that the figures come from historians’ counts of the records.'] },
+  { q: 'The 1861 parliamentary committee looked into charges of “unnecessary cruelty” by officers, but recommended keeping the force. What does this tell us about who the committee was asking, and what did it decide?', a: ['It recommended keeping the force, with better officers, discipline and reporting. The committee heard evidence including that boys were being taken by force from inland stations.', 'Students should notice that the committee was a parliament of settlers and that the decision was about how to run the force, not whether to end it.'] },
+  { q: 'Who should decide how this history is told in schools? Why might the author ask Traditional Owners to review this resource?', a: ['The people whose families and country were affected should have a say. Review by Traditional Owners can find errors, point out things that should not be shown, and make sure the resource does not take over knowledge that belongs to them.'] }
+]
+};

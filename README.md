@@ -1,15 +1,21 @@
-# Billy and the Native Police
+# The Native Mounted Police in Queensland
 
-A choose-your-path story set in Central Queensland in the late 1870s, about a young Aboriginal trooper in the Native Mounted Police. For teen readers. Fiction built on sourced history, with a student version and a teacher version.
+By Robin McKean. A non-fiction information bank about the Native Mounted Police in Queensland, 1849 to 1904, with a focus on Central Queensland.
 
 - Student version: https://robmac10.github.io/native-police-adventure/
-- Teacher version: https://robmac10.github.io/native-police-adventure/teacher/ (notes and answers behind "Show" buttons; not indexed)
+- Teacher version: https://robmac10.github.io/native-police-adventure/teacher/ (not linked from the student version, and set to noindex). It adds discussion questions with suggested answers behind "Show" buttons.
 
-## Content warning
-This resource may contain names and images of deceased Aboriginal and Torres Strait Islander people. It deals with frontier violence. It has **not yet been reviewed by Traditional Owners**. Please seek cultural review (for example from the Darumbal, Gaangalu and Wulli Wulli peoples) before classroom use.
+## What is in it
+Overview, Timeline (dated events, each with a short explanation and its source), Places, People and groups (real ones only), Real lives (short documented accounts, with a person's own words only where a source records them), Did you know, and Sources (including where sources disagree). There are no invented characters, no story and no newspaper headlines.
 
-## Build
-Edit `src/` (data1.js to data3.js hold all text and sources; app.js, index.html and styles.css hold the app), then run `node build.js`. It writes the student version at the site root and the teacher version in `teacher/`. The student build removes every `teacher` key, all discussion answers and all teacher-only code.
+## Content warning and review
+This resource may contain names and images of deceased Aboriginal and Torres Strait Islander people (and, for the sugar resource, South Sea Islander people). It has **not yet been reviewed** by community members. Please seek review, for example from the Darumbal, Gaangalu and Wulli Wulli peoples, before classroom use.
+
+## Editing
+Edit files in `src/` (`info.js` holds all text, facts and questions; `extra-sources.js` holds source notes; `app.js`, `index.html` and `styles.css` hold the page), then run `node build.js`. It writes the student version at the site root and the teacher version in `teacher/`. The student build removes all discussion questions, answers and teacher-only code. Do not edit the built files in the root or in `teacher/` directly.
+
+## Archive
+The earlier choose-your-path story version is kept, not deleted. It is the git tag `story-version` and the folder `archive/story-version/`.
 
 ## Rules followed
-No invented history (invented people and events are listed in Behind the Story), one public-domain image with credit, no AI images, plain prose, Australian English.
+No invented facts (where sources disagree, the resource says so), public domain credited images only, no AI images, plain prose, Australian English.
