@@ -7,10 +7,10 @@ title: 'The Native Mounted Police in Queensland',
 subtitle: 'An information bank about the force, 1849 to 1904, with a focus on Central Queensland',
 description: 'A non-fiction information bank about the Native Mounted Police in Queensland: an overview, timeline, places, people and groups, real lives, and sources. Includes a cultural content warning.',
 dateLeft: 'Queensland · 1849 to 1904',
-dateRight: 'By Robin McKean',
+dateRight: 'Information bank',
 theme: '#2b2118',
 footnote: 'This resource may contain names and images of deceased Aboriginal and Torres Strait Islander people. Everything in it comes from the sources listed on the Sources page.',
-footer: 'By Robin McKean. This is a non-fiction information bank. It has no tracking and no cookies. An earlier choose-your-path story version is kept in the archive folder of the project on GitHub.',
+footer: 'This is a non-fiction information bank. It has no tracking and no cookies. An earlier choose-your-path story version is kept in the project history on GitHub (tag story-version).',
 warning: [
   'This resource may contain names and images of deceased Aboriginal and Torres Strait Islander people.',
   'It is about the Native Police and frontier violence in Queensland. It does not describe violence in detail, but it does say that it happened. You can stop at any time. If this upsets you, talk to a teacher, a family member or someone you trust.'
@@ -144,7 +144,7 @@ lives: [
   { name: 'The men in the 1864 photograph at Rockhampton', dates: '1864', text: [
     'A photograph from 1864 shows Lieutenant George Murray and his detachment. The back row shows Trooper Carbine, Lieutenant Murray, a second lieutenant and a camp sergeant whose names are not recorded, and Corporal Michael. The front row shows Troopers Barney, Hector, Goondallie, Balantyne and Patrick.',
     'These are the names used for the men in the force. Their own names are not recorded in the caption. Records at the time often gave troopers English names. The photograph is held by the Queensland Police Museum. It is in the public domain in Australia.'
-  ], image: 'murray', src: ['photo', 'burke'] }
+  ], src: ['photo', 'burke'] }
 ],
 know: [
   { t: 'Troopers wore uniforms, rode horses and carried guns. Settlers and newspapers wrote that these things attracted recruits. Researchers say the uniform and equipment also showed who held power.', src: ['burke'] },
@@ -174,7 +174,6 @@ care: [
 readMore: ['fcdb', 'qsa'],
 images: {
   quay: { file: 'images/rockhampton-quay-1864.jpg', w: 1000, h: 601, alt: 'A black and white photograph of a river bank with ships tied up at a wharf. A few low buildings stand beside a wide dirt street on the right, and a verandah post stands in the front left.', caption: 'Ships docked at the wharf in Quay Street, Rockhampton, 1864.', credit: 'John Oxley Library, State Library of Queensland (public domain)', url: 'https://commons.wikimedia.org/wiki/File:StateLibQld_1_51152_Ships_docked_at_the_wharf_in_Quay_Street,_Rockhampton,_1864.jpg' },
-  murray: { file: 'images/native-mounted-police-rockhampton-1864.jpg', w: 899, h: 642, people: true, summary: 'Lieutenant Murray’s detachment, Rockhampton, 1864 (it shows people who have died)', alt: 'A black and white photograph of an officer, a camp sergeant and troopers of the Native Mounted Police standing in two rows at Rockhampton in 1864.', caption: 'Lieutenant George Murray and his detachment of Native Mounted Police at Rockhampton, 1864. The names are those used for the men in the force.', credit: 'Queensland Police Museum (public domain in Australia)', url: 'https://commons.wikimedia.org/wiki/File:Queensland_Native_Police_1864.jpg' }
 },
 teacherNotes: [
   'Before you use this in class, please seek advice from the Traditional Owners of your area. The resource was written by a non-Aboriginal author and has not yet been reviewed by Traditional Owners.',

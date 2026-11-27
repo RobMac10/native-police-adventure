@@ -1,6 +1,6 @@
 # The Native Mounted Police in Queensland
 
-By Robin McKean. A non-fiction information bank about the Native Mounted Police in Queensland, 1849 to 1904, with a focus on Central Queensland.
+A non-fiction information bank about the Native Mounted Police in Queensland, 1849 to 1904, with a focus on Central Queensland.
 
 - Student version: https://robmac10.github.io/native-police-adventure/
 - Teacher version: https://robmac10.github.io/native-police-adventure/teacher/ (not linked from the student version, and set to noindex). It adds discussion questions with suggested answers behind "Show" buttons.
@@ -15,7 +15,7 @@ This resource may contain names and images of deceased Aboriginal and Torres Str
 Edit files in `src/` (`info.js` holds all text, facts and questions; `extra-sources.js` holds source notes; `app.js`, `index.html` and `styles.css` hold the page), then run `node build.js`. It writes the student version at the site root and the teacher version in `teacher/`. The student build removes all discussion questions, answers and teacher-only code. Do not edit the built files in the root or in `teacher/` directly.
 
 ## Archive
-The earlier choose-your-path story version is kept, not deleted. It is the git tag `story-version` and the folder `archive/story-version/`.
+The earlier choose-your-path story version is kept, not deleted. It is the git tag `story-version` (the archive folder was removed from the published site on 27 Nov 2026).
 
 ## Rules followed
 No invented facts (where sources disagree, the resource says so), public domain credited images only, no AI images, plain prose, Australian English.
